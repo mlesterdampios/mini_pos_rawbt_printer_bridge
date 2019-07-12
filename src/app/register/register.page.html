@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+      <ion-item-divider color="primary">Server Details (Please include port if not 80)</ion-item-divider>
+  
+      <ion-item>
+        <ion-label position="floating">API Server IP</ion-label>
+        <ion-input type="text" [(ngModel)]="apiServer" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Empty Img Url</ion-label>
+        <ion-input type="text" [(ngModel)]="imgUrl" ></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating">Web Server</ion-label>
+          <ion-input type="text" [(ngModel)]="webServer" ></ion-input>
+      </ion-item>
+      <ion-item-divider color="primary">School Details</ion-item-divider>
+      <ion-item>
+            <ion-label position="floating">School Name</ion-label>
+            <ion-input type="text" [(ngModel)]="schoolName" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Gate Name</ion-label>
+        <ion-input type="text" [(ngModel)]="gateName" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Announcement Img Link</ion-label>
+        <ion-input type="text" [(ngModel)]="announcementImg" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Background Img Link</ion-label>
+        <ion-input type="text" [(ngModel)]="backgroundImg" ></ion-input>
+      </ion-item>
+      <ion-item-divider color="primary">Image Sizes</ion-item-divider>
+      <ion-item>
+        <ion-label position="floating">ID Max Width</ion-label>
+        <ion-input type="text" [(ngModel)]="maxWidth" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">ID Max Height</ion-label>
+        <ion-input type="text" [(ngModel)]="maxHeight" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">BG Max Width</ion-label>
+        <ion-input type="text" [(ngModel)]="bgMaxWidth" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">BG Max Height</ion-label>
+        <ion-input type="text" [(ngModel)]="bgMaxHeight" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Announcement Max Width</ion-label>
+        <ion-input type="text" [(ngModel)]="announcementMaxWidth" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Announcement Max Height</ion-label>
+        <ion-input type="text" [(ngModel)]="announcementMaxHeight" ></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  
+  <ion-footer>
+      <ion-button expand="block" color="primary" (click)="submit()">Submit</ion-button>
+  </ion-footer>

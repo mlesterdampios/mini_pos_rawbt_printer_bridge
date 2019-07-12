@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      AutoPrinter
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+      <ion-item-divider color="primary">AutoPrinter Details</ion-item-divider>
+  
+      <ion-item>
+        <ion-label position="floating">Database File Full Path (Including db file name)</ion-label>
+        <ion-input type="text" [(ngModel)]="dbFileFullPath" ></ion-input>
+        <ion-button slot="end" color="success" (click)="loadDb()">Load Database File</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label>Auto Printing (Check if auto, uncheck if manual)</ion-label>
+        <ion-checkbox [(ngModel)]="isAutomatic"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating">Last Printed Order ID</ion-label>
+          <ion-input type="number" required [(ngModel)]="lastPrintedID" ></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating">Last Printed Purchase Order ID</ion-label>
+          <ion-input type="number" required [(ngModel)]="lastPrintedPurchaseID" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Delay Print</ion-label>
+        <ion-input type="number" required [(ngModel)]="origMsTimer"></ion-input>
+    </ion-item>
+      <!--
+      <ion-item-divider color="primary">School Details</ion-item-divider>
+      <ion-item>
+            <ion-label position="floating">School Name</ion-label>
+            <ion-input type="text" [(ngModel)]="schoolName" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Gate Name</ion-label>
+        <ion-input type="text" [(ngModel)]="gateName" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Announcement Img Link</ion-label>
+        <ion-input type="text" [(ngModel)]="announcementImg" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Background Img Link</ion-label>
+        <ion-input type="text" [(ngModel)]="backgroundImg" ></ion-input>
+      </ion-item>
+      -->
+    </ion-list>
+  </ion-content>
+  
+  <ion-footer>
+      <!-- <ion-button expand="block" color="success" (click)="minimizeApp()">Back</ion-button> -->
+      <ion-button expand="block" color="primary" (click)="submit()">Submit</ion-button>
+  </ion-footer>
