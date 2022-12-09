@@ -38,7 +38,7 @@
     "@ionic/storage": "^2.2.0",
     "com-darryncampbell-cordova-plugin-intent": "1.1.7",
     "cordova-android": "7.1.4",
-    "cordova-browser": "5.0.4",
+    "cordova-browser": "6.0.0",
     "cordova-plugin-android-permissions": "1.0.0",
     "cordova-plugin-app-launcher": "0.4.0",
     "cordova-plugin-appminimize": "1.0.1",
